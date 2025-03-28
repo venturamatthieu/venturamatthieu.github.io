@@ -1,0 +1,2 @@
+* Translations
+    * [En](/latest/en/)
