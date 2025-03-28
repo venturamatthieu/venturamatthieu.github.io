@@ -4,7 +4,7 @@ When a manager comes to me, I don’t ask him, “What’s the problem?” I say
 
 ## TDD and BDD
 
-### Test Driven Development (TDD) 
+### Test Driven Development (TDD)
 TDD is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free.
 
 ![](https://miro.medium.com/max/1024/1*749GtQGqamkOqfOe40o_Tg.png)
@@ -44,7 +44,7 @@ BDD is a Test-First, Agile Testing practice that provides Built-In Quality by de
 
 ![](https://www.scaledagileframework.com/wp-content/uploads/2018/09/Behavior-Driven-Development_F03_web.png)
 
-Gherkin language, Given, When, Then : 
+Gherkin language, Given, When, Then :
 
 ```
 Feature: Guess the word
@@ -115,7 +115,7 @@ Mutation Testing is a type of software testing in which certain statements of th
 ![](https://www.guru99.com/images/m2.png)
 
 ### Chaos testing
-Limit between dev and devops.  
+Limit between dev and devops.
 Netflix have a great library, you can take a look, https://netflix.github.io/chaosmonkey/
 
 ![](https://netflix.github.io/chaosmonkey/logo.png)

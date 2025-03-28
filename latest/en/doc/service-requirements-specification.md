@@ -12,7 +12,7 @@ An SRS document typically includes these elements:
 
 ![](https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/static/optimized/rev-ac7cf1a/wp-content/webp-express/webp-images/uploads/2020/09/rsz_1unpt0nojddndtanxedittltkr33gvqtqxkohp2lz.png.webp)
 
-## Maps example 
+## Maps example
 
 1. Purpose
 2. Intended Audience
@@ -22,8 +22,8 @@ An SRS document typically includes these elements:
 6. Overall Description
 7. User Needs
 8. Assumptions and Dependencies
-9. System Features and Requirements 
-   1. Functional Requirements 
-   2. External Interface Requirements 
-   3. System Features 
+9. System Features and Requirements
+   1. Functional Requirements
+   2. External Interface Requirements
+   3. System Features
    4. Non-functional Requirements

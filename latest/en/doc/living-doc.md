@@ -4,28 +4,28 @@ Do we really need this documentation?
 Do we really need this documentation now?
 Could we just share knowledge through conversations or working together?
 
-## External vs Internal 
+## External vs Internal
 
 External :
-- Feature files used for business-readable specifications and testing tools 
-- Markdown files and images next to the code with a naming convention or linked to from the code or feature files 
+- Feature files used for business-readable specifications and testing tools
+- Markdown files and images next to the code with a naming convention or linked to from the code or feature files
 - Tools manifests, including the dependency management manifest, automated deployment manifest, infrastructure description manifest, and so on
 
-Internal : 
-- Self-documenting code and use of clean code practices, including class and method naming, using composed methods and types 
-- Annotations that add knowledge to elements of the programming language 
-- Javadoc comments on public interfaces, classes, and main methods 
+Internal :
+- Self-documenting code and use of clean code practices, including class and method naming, using composed methods and types
+- Annotations that add knowledge to elements of the programming language
+- Javadoc comments on public interfaces, classes, and main methods
 - Folder organization and decomposition and naming of modules and submodules
 
 Prefer internal and remember :
 
 **The best place to put documentation about a thing is on the thing itself.**
 
-## Pimp your code with tag or attribute 
+## Pimp your code with tag or attribute
 
-Tag 
+Tag
 
-```java 
+```java
 @BoundedContext(name = "Cat Activity")
 package com.acme.lolcat.domain
 
@@ -34,11 +34,11 @@ interface CatActivity
 
 ```
 
-Attributes 
-``` java 
+Attributes
+``` java
 public class Foo
 {
-    [KeyLandmark("The main steps of enriching the Customer Purchase from 
+    [KeyLandmark("The main steps of enriching the Customer Purchase from
     the initial order to a ready-to-confirm purchase")]
     public void Enrich(CustomerPurchase cp)
     {
@@ -48,7 +48,7 @@ public class Foo
 
 ```
 
-Example of tags : 
+Example of tags :
 @wip, @pending, @controversial
 @acceptancecriteria @specs @returnpolicy @nominalcase @keyexample
 @Documented, @ValueObject @CoreConcept, @DomainService, @DomainEvent, @BusinessPolicy,
@@ -56,7 +56,7 @@ Example of tags :
 
 ## Facilitate business and tech communication
 
-### Easy onboarding 
+### Easy onboarding
 
 For tech, you can use a tag @Examplar("comment")
 
@@ -81,13 +81,13 @@ Sightseeing Map (max 10 places) :
 Generate an output who contains all important concept. It's based on a defined tag, like @glossary.
 
 ### Living Diagram
-Generate diagrams from different sources : 
+Generate diagrams from different sources :
 - story
 - architecture design (package name, extend, interface)
 
-## Exhausted Tools list 
-- Doclet 
-- AsciiDoc 
-- picklesdoc 
-- Specflow 
-- Relish 
+## Exhausted Tools list
+- Doclet
+- AsciiDoc
+- picklesdoc
+- Specflow
+- Relish

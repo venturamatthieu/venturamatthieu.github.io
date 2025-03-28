@@ -2,10 +2,10 @@
 
 ## What's existing yet ? Is it working ? 
 
-Before we have to take time to check on legacy code. VPG used two solutions :
+Before we have to take time to check on legacy code.  There are various solutions to check :
 
-- Github : https://github.com/vpg
-- Gitlab : https://gitlab.vpg.tech
+- Github : https://github.com/
+- Gitlab : https://gitlab.com
 
 Use all git features to find what's happen previously in codebase, like **git blame** or **git log**. 
 
@@ -51,7 +51,7 @@ It comes in different flavours, that can be used in different scenarios:
 - to envision new services, that maximise positive outcomes to every party involved;
 - to design clean and maintainable Event-Driven software, to support rapidly evolving businesses.
 
-Steps : 
+Steps :
 1. Identifying the domain events (facts) that occur in the system (“user account created”, “reservation created” or “money withdrawn”)
 2. Analyze what happens between events – does the former event triggers the later? Is there any business logic? If so those events should be separated with a business rule named policy.
 3. Find what kind of actions cause the events – is it a user clicking on UI, a call from an external system or ticking clock?
@@ -63,7 +63,7 @@ Legend :
 
 ![legend](https://passion-to-profession.com/wp-content/uploads/2019/02/Screenshot-2019-02-11-at-17.39.03.png)
 
-Examples : 
+Examples :
 
 ![example](https://passion-to-profession.com/wp-content/uploads/2019/02/CQ-Shop-all.jpg)
 ![example](https://baasie.com/wp-content/uploads/2020/07/Book-Software-picture4.jpg)

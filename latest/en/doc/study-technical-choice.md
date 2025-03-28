@@ -4,10 +4,10 @@ During this phase, you have to consult all technical expert :
 
 - Developer (language, framework, etc)
 - Tech Lead
-- Architect 
-- VP engineering 
+- Architect
+- Hed of engineering
 - DevOps
-- Sys admin  
+- Sys admin
 - Qa Team
 
 ![](https://images.ctfassets.net/82ripq7fjls2/2eVb2qmTZznSW5kMFI3f66/59e4f19a97c67fdad5d06ec90d18d0f6/2019_06_DevOps-Diagram.png?w=800&fit=fill&f=center&q=95&fm=webp)
@@ -20,7 +20,7 @@ Layer's approach is very interesting to isolated responsibility in your applicat
 One most famous pattern in this category is Model View Controller aka MVC (input user, store data, etc.).
 This Pattern is good, but it's not enough to isolated technical logic from business logic.
 
-The idea of Hexagonal Architecture is to put inputs and outputs at the edges of our design. 
+The idea of Hexagonal Architecture is to put inputs and outputs at the edges of our design.
 Business logic should not depend on whether we expose a REST or a GraphQL API, and it should not depend on where we get data from — a database, a microservice API exposed via gRPC or REST, or just a simple CSV file.
 The pattern allows us to isolate the core logic of our application from outside concerns. Having our core logic isolated means we can easily change data source details without a significant impact or major code rewrites to the codebase.
 One of the main advantages we also saw in having an app with clear boundaries is our testing strategy — the majority of our tests can verify our business logic without relying on protocols that can easily change.
@@ -28,14 +28,14 @@ One of the main advantages we also saw in having an app with clear boundaries is
 ![](https://static.packt-cdn.com/products/9781839211966/graphics/B15547_02_04.jpg)
 ![](https://miro.medium.com/max/1400/1*NfFzI7Z-E3ypn8ahESbDzw.png)
 
-Pros : 
+Pros :
 - Testability improvement
 - Maintainability improvement
 - Flexibility
 - Application immune to technology evolution
 - Delay technological decisions
 
-Cons : 
+Cons :
 - Complexity
 - Build process performance
 - Indirection and Mappings
@@ -93,9 +93,9 @@ Cons :
 REST stands for REpresentational State Transfer and is an architectural style for network communication between applications, which relies on a stateless protocol (usually HTTP) for interaction.
 In REST APIs, we use the HTTP verbs as actions, and the endpoints are the resources acted upon. 
 We’ll be using the HTTP verbs for their semantic meaning:
-- GET: retrieve resources 
-- POST: create resources 
-- PUT: update resources 
+- GET: retrieve resources
+- POST: create resources
+- PUT: update resources
 - PATCH: update resources
 - DELETE: delete resources
 
@@ -103,27 +103,27 @@ We’ll be using the HTTP verbs for their semantic meaning:
 
 Level of rest
 - Level 1 – Resources
-- Level 2 - HTTP Verbs 
+- Level 2 - HTTP Verbs
 - Level 3 - Hypermedia Controls (hateoas for business sem)
 
 ```json
 {
-  "booking": {
-    "id": "KNDJT2A23A7703818",
+  "cooking": {
+    "id": "DSH3893983",
     "links": [
       {
-        "href": "/flights/booking/KNDJT2A23A7703818",
-        "rel": "flights",
+        "href": "/kitchen/cooking/DSH3893983",
+        "rel": "kitchens",
         "type" : "GET"
       },
       {
-        "href": "/options/booking/KNDJT2A23A7703818",
-        "rel": "options",
+        "href": "/house/cooking/DSH3893983",
+        "rel": "houses",
         "type" : "GET"
       },
       {
-        "href": "/payment/booking/KNDJT2A23A7703818",
-        "rel": "payment",
+        "href": "/enterprise/cooking/DSH3893983",
+        "rel": "enterprises",
         "type" : "GET"
       }
     ]
@@ -153,8 +153,8 @@ A GraphQL server provides a client with a predefined schema – a model of the d
 
 Based on the graph data modeling with the schema at its core, GraphQL has three primary operations:
 
-1. Query for reading data 
-2. Mutation for writing data 
+1. Query for reading data
+2. Mutation for writing data
 3. Subscription for automatically receiving real-time data over time.
 
 ![](https://i.imgur.com/z9VKnHs.png)
@@ -162,7 +162,7 @@ Based on the graph data modeling with the schema at its core, GraphQL has three 
 ![](https://content.altexsoft.com/media/2019/03/word-image-6.png)
 
 Pros :
-- Ecosystem (Apollo, Gateway, Microservice) 
+- Ecosystem (Apollo, Gateway, Microservice)
 - Good for select data properties with nested data
 - Good fit for complex systems and microservices
 - GraphQL for read but REST for writes.
@@ -181,14 +181,14 @@ Cons :
 
 Remote Procedure Call (RPC) is a protocol that provides the high-level communications paradigm used in the operating system. RPC presumes the existence of a low-level transport protocol, such as Transmission Control Protocol/Internet Protocol (TCP/IP) or User Datagram Protocol (UDP), for carrying the message data between communicating programs. RPC implements a logical client-to-server communications system designed specifically for the support of network applications.
 
-It's existing multiple implementation : 
+It's existing multiple implementation :
 - xml-rpc (SOAP)
 - json-rpc
 - gRPC
 - avroRpc
 
 ![](https://blog.logrocket.com/wp-content/uploads/2020/04/gRPC-server-1536x991.png)
-![](https://www.oreilly.com/library/view/grpc-up-and/9781492058328/assets/grpc_0101.png) 
+![](https://www.oreilly.com/library/view/grpc-up-and/9781492058328/assets/grpc_0101.png)
 
 Pros :
 - Perf with TCP (based on HTTP2)
@@ -197,7 +197,7 @@ Pros :
 - Good for schema exposure (auto doc)
 
 Cons :
-- Careful with volume payload 
+- Careful with volume payload
 - Highly coupled Front / Back (versioning)
 - Overkill for small applications
 - Not compliant on all browsers
@@ -225,12 +225,12 @@ Message format specification : https://github.com/cloudevents/spec
 
 ![](https://miro.medium.com/max/1302/0*p05ch77ERQOpj2GN.png)
 
-Pros : 
+Pros :
 - Scalable systems
 - Loosely coupling application (microservice)
 - Very high in terms of using resources more efficiently (async)
 
-Cons : 
+Cons :
 - Hard for Policy retry (define a unique id)
 - Be careful when ordering on multiple consumer (example : bank account input)
 - Bad for schema exposure (manually with tools)
@@ -251,7 +251,7 @@ Cons :
 
 ## Programming Languages
 
-Firstly, you should ask a lot of questions : 
+Firstly, you should ask a lot of questions :
 
 - What is the environment for the project (web, mobile, etc)?
 - Any specific requirement of libraries, features, and tools for the programming language?

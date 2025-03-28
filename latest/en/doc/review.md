@@ -8,13 +8,13 @@ Some vigilant points :
 - Don't push too much code lines on your pull request
 - Check commit availability for changelog
 - Check database structure change (uses tools)
-- Check metric goal 
+- Check metric goal
 - Check tests scope
 - Check documentation updated
 - Be careful on project dependencies (api or lib)
 
 ## Business review
 
-Take time to validate all goal listed in SLA with business sponsors. 
+Take time to validate all goal listed in SLA with business sponsors.
 
 

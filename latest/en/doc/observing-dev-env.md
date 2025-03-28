@@ -1,6 +1,6 @@
 # Observing what's append on dev env
 
-Before starting with application observability, you have to implement a connector with a library. 
+Before starting with application observability, you have to implement a connector with a library.
 
 Cloud native foundation support a project, take a look to https://opentelemetry.io/
 
@@ -20,9 +20,9 @@ And more
 - Call Stack
 - HTTP Code
 
-## Tracing 
+## Tracing
 
-Tracing are very use full for detecting perfomance issue. 
+Tracing are very use full for detecting perfomance issue.
 
 ![](https://www.elastic.co/guide/en/kibana/current/apm/images/apm-transaction-sample.png)
 
@@ -70,7 +70,7 @@ Metrics are identified by two key pieces of information:
 - A metric name
 - A set of key-value pairs called tags or labels
 
-You could have technical metric or business. 
+You could have technical metric or business.
 
 ### Example for resource
 - CPU/Memory Utilization: Usage of the system’s core resources.
@@ -85,6 +85,6 @@ You could have technical metric or business.
 
 ## Dashboard and alert
 
-After collecting logs, traces or metric, you can create a dashboard on a tool. 
-This dashboard will be coded in a specific file. 
+After collecting logs, traces or metric, you can create a dashboard on a tool.
+This dashboard will be coded in a specific file.
 For example on Grafana, documentation explain how to do that, https://grafana.com/docs/grafana/latest/http_api/dashboard/
