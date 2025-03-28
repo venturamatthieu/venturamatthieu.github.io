@@ -7,5 +7,5 @@
 - And more
 
 
-[In progress](/latest/en/ ':id=freeReading')
+[Start Reading](/latest/en/ ':id=startReading')
 
