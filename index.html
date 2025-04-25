@@ -1,4 +1,188 @@
 <!DOCTYPE html>
-
-Coucou
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Matthieu Ventura - Architect IT</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #fff;
+            color: #232f3e;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 48px 0 48px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: #7862f8;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            padding: 0 48px;
+            gap: 60px;
+        }
+        .socials {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 48px;
+            top: 50%;
+            transform: translateY(-50%);
+            gap: 24px;
+        }
+        .socials a {
+            color: #7862f8;
+            font-size: 1.5em;
+            transition: color 0.2s;
+        }
+        .socials a:hover {
+            color: #3e215b;
+        }
+        .intro {
+            max-width: 400px;
+        }
+        .intro h1 {
+            font-size: 2.6em;
+            margin: 0 0 12px 0;
+        }
+        .intro h1 span {
+            color: #232f3e;
+        }
+        .intro h2 {
+            color: #868686;
+            font-size: 1.2em;
+            margin: 0 0 18px 0;
+            font-weight: 400;
+        }
+        .intro p {
+            color: #6a6a8e;
+            margin-bottom: 32px;
+        }
+        .btn {
+            background: #7862f8;
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            border: none;
+        }
+        .btn:hover {
+            background: #5743b3;
+        }
+        .photo .blob {
+            background: linear-gradient(135deg, #7862f8 60%, #a592fe 100%);
+            border-radius: 45% 55% 47% 53% / 70% 50% 50% 70%;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .photo img {
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+            top: 55px;
+            right: 55px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: #232f3e;
+            font-size: 1.1em;
+        }
+        footer i {
+            color: #7862f8;
+        }
+        @media (max-width: 1000px) {
+            main {
+                flex-direction: column;
+                gap: 30px;
+                padding: 0 16px;
+            }
+            .photo .blob {
+                width: 250px;
+                height: 250px;
+            }
+            .photo img {
+                width: 140px;
+                top: 40px;
+                right: 40px;
+            }
+            .socials {
+                position: static;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 20px;
+                transform: none;
+            }
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+                padding: 24px 8px 0 8px;
+            }
+            nav ul {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <h1>Hi, I am <span>Matthieu Ventura</span></h1>
+            <h2>Architect IT</h2>
+            <p>
+                Highly experienced
+            </p>
+            <a href="http://www.linkedin.com/in/matthieu-ventura" target="_blank" class="btn">Contact Me <i class="fas fa-arrow-right"></i></a>
+        </section>
+        <section class="photo">
+            <div class="blob">
+                <!-- Remplace l’URL de l’image par la tienne si besoin -->
+                <img src="mv_avatar.jpeg" alt="Matthieu Ventura">
+            </div>
+        </section>
+    </main>
+</body>
 </html>
+
+
+
+
+
+
